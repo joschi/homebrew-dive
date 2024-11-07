@@ -5,20 +5,20 @@
 class Dive < Formula
   desc "A tool for exploring layers in a docker image"
   homepage "https://github.com/joschi/dive/"
-  version "0.13.0-alpha.1"
+  version "0.13.0-alpha.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.1/dive_0.13.0-alpha.1_darwin_amd64.tar.gz"
-      sha256 "1418eae5f8a82775393a20006f31bc98cea5c29d4734fb82b3b83eed8750adba"
+      url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.2/dive_0.13.0-alpha.2_darwin_amd64.tar.gz"
+      sha256 "4b7a32a3c2ae6011d56cc9ba32fc6a918a12074511446b258186a1a033d28770"
 
       def install
         bin.install "dive"
       end
     end
     on_arm do
-      url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.1/dive_0.13.0-alpha.1_darwin_arm64.tar.gz"
-      sha256 "ee809007a4dfed874b83f1e6521a3a1a0a996b8590aca9f85b55b2b161a97d70"
+      url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.2/dive_0.13.0-alpha.2_darwin_arm64.tar.gz"
+      sha256 "a098d7b33a98620aeeec51e29c93c6eb6d79d3e1989bdae21e3e0572e02e9b48"
 
       def install
         bin.install "dive"
@@ -29,8 +29,8 @@ class Dive < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.1/dive_0.13.0-alpha.1_linux_amd64.tar.gz"
-        sha256 "7789fc64a76f01ffb56b9f4ade3881b33cbb144b33af7e12ec8cb484ff018d0b"
+        url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.2/dive_0.13.0-alpha.2_linux_amd64.tar.gz"
+        sha256 "ce6fcde0f71fa3d5c997b2f358caa9be577f86fb6d04bbf0837f6f0396950c59"
 
         def install
           bin.install "dive"
@@ -39,8 +39,8 @@ class Dive < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.1/dive_0.13.0-alpha.1_linux_arm64.tar.gz"
-        sha256 "44de122a1604fab972046c1d21e2d68a081be5cd8c3a7e05a0e694d56762bf30"
+        url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.2/dive_0.13.0-alpha.2_linux_arm64.tar.gz"
+        sha256 "28935d1b7dbe9cca725078e70d2a5cdfcea803a561cf9eff6f4a8cba8df21c20"
 
         def install
           bin.install "dive"
