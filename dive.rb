@@ -5,20 +5,20 @@
 class Dive < Formula
   desc "A tool for exploring layers in a docker image"
   homepage "https://github.com/joschi/dive/"
-  version "0.13.0-alpha.3"
+  version "0.13.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.3/dive_0.13.0-alpha.3_darwin_amd64.tar.gz"
-      sha256 "4b867ba3af09b9bccf94762b5f7a05596411d2f64fb50031608ce450205e9f40"
+      url "https://github.com/joschi/dive/releases/download/v0.13.1/dive_0.13.1_darwin_amd64.tar.gz"
+      sha256 "9bf3e6441f6137f88190ee74ae62a0ecf7aae63425222b5c000f77ce39e757c0"
 
       def install
         bin.install "dive"
       end
     end
     on_arm do
-      url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.3/dive_0.13.0-alpha.3_darwin_arm64.tar.gz"
-      sha256 "254afcf35423d74d821f639efd729e2b8366c3149e6ae2707545b48f6928eb88"
+      url "https://github.com/joschi/dive/releases/download/v0.13.1/dive_0.13.1_darwin_arm64.tar.gz"
+      sha256 "20a4508df329262aa0cd4d3225eb2accc04cb2db4e1d02e977dd2b870c23b816"
 
       def install
         bin.install "dive"
@@ -29,8 +29,8 @@ class Dive < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.3/dive_0.13.0-alpha.3_linux_amd64.tar.gz"
-        sha256 "4f35e78821b444a08b7ccbe6151bac47f0f29d77c9aa005c96f98af5d2e16b2e"
+        url "https://github.com/joschi/dive/releases/download/v0.13.1/dive_0.13.1_linux_amd64.tar.gz"
+        sha256 "d151b5de6c571695682aad8ad13f3f0066293dd80b369fb21c6eb54dac2a9656"
 
         def install
           bin.install "dive"
@@ -39,8 +39,8 @@ class Dive < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joschi/dive/releases/download/v0.13.0-alpha.3/dive_0.13.0-alpha.3_linux_arm64.tar.gz"
-        sha256 "d6a4653973c2d721ba76acb4dc22c7b024ec706dd38226281edfb45fd66c6685"
+        url "https://github.com/joschi/dive/releases/download/v0.13.1/dive_0.13.1_linux_arm64.tar.gz"
+        sha256 "4facbdf99b87d1550db426c9d1f7471e273ba37353b0576045c1c601bb9761ea"
 
         def install
           bin.install "dive"
