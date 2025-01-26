@@ -5,20 +5,20 @@
 class Dive < Formula
   desc "A tool for exploring layers in a docker image"
   homepage "https://github.com/joschi/dive/"
-  version "0.13.1"
+  version "0.14.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/joschi/dive/releases/download/v0.13.1/dive_0.13.1_darwin_amd64.tar.gz"
-      sha256 "9bf3e6441f6137f88190ee74ae62a0ecf7aae63425222b5c000f77ce39e757c0"
+      url "https://github.com/joschi/dive/releases/download/v0.14.0/dive_0.14.0_darwin_amd64.tar.gz"
+      sha256 "cfbcccb9714206eece925df34d8416dc07c2edd7685c2afbcc3e38113b20eed0"
 
       def install
         bin.install "dive"
       end
     end
     on_arm do
-      url "https://github.com/joschi/dive/releases/download/v0.13.1/dive_0.13.1_darwin_arm64.tar.gz"
-      sha256 "20a4508df329262aa0cd4d3225eb2accc04cb2db4e1d02e977dd2b870c23b816"
+      url "https://github.com/joschi/dive/releases/download/v0.14.0/dive_0.14.0_darwin_arm64.tar.gz"
+      sha256 "8549c609629fece9ebec0f2a2b00d6011350b4928dfd8d47ddd91dbe49328c18"
 
       def install
         bin.install "dive"
@@ -29,8 +29,8 @@ class Dive < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joschi/dive/releases/download/v0.13.1/dive_0.13.1_linux_amd64.tar.gz"
-        sha256 "d151b5de6c571695682aad8ad13f3f0066293dd80b369fb21c6eb54dac2a9656"
+        url "https://github.com/joschi/dive/releases/download/v0.14.0/dive_0.14.0_linux_amd64.tar.gz"
+        sha256 "256f1857a559cbfabecb083b1654108dde78f7a5de950a0e5510c2924fdf3fe5"
 
         def install
           bin.install "dive"
@@ -39,8 +39,8 @@ class Dive < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/joschi/dive/releases/download/v0.13.1/dive_0.13.1_linux_arm64.tar.gz"
-        sha256 "4facbdf99b87d1550db426c9d1f7471e273ba37353b0576045c1c601bb9761ea"
+        url "https://github.com/joschi/dive/releases/download/v0.14.0/dive_0.14.0_linux_arm64.tar.gz"
+        sha256 "af130557927186998a334ccf6c68755bf6b1e9959c216629aeb2afe14ba0ab88"
 
         def install
           bin.install "dive"
